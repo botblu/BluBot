@@ -5,7 +5,7 @@ rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
 chmod +x Blu
 chmod +x ts
-./ts
+./Blu
 }
 get() {
 rm -fr Blu.lua
@@ -46,7 +46,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd Blu
+cd BluBot
 rm -rf luarocks*
 lua start.lua
 
