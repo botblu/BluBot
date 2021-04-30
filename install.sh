@@ -8,7 +8,7 @@ chmod +x Run
 ./Run
 }
 get() {
-rm -fr Blu.lua
+
 rm -fr sudo.lua
 lua start.lua
 }
