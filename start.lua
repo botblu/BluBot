@@ -69,14 +69,14 @@ RunBlu:write([[
 #!/usr/bin/env bash
 cd $HOME/BluBot
 token="]]..database:get(Server_Blu.."Token_Blu")..[["
-rm -fr Blu.lua
+
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./Blu.lua -p PROFILE --bot=$token
 done
 ]])
 RunBlu:close()
-local RunTs = io.open("ts", 'w')
+local RunTs = io.open("Run", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
 cd $HOME/BluBot
