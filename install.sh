@@ -4,8 +4,8 @@ install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
 chmod +x Blu
-chmod +x ts
-./Blu
+chmod +x Run
+./Run
 }
 get() {
 rm -fr Blu.lua
