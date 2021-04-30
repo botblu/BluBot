@@ -77,7 +77,7 @@ rm -fr ../.telegram-cli
 done
 ]])
 RunBlu:close()
-local RunTs = io.open("ts", 'w')
+local RunTs = io.open("Run", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
 cd $HOME/BluBot
