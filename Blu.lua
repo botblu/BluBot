@@ -477,9 +477,9 @@ end
 function Reply_Status(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,data) 
 if data.first_name_ ~= false then
-local UserName = (data.username_ or "BLUTAEM")
-local NameUser = "[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| بواسطه ↺ ["..data.first_name_.."](T.me/"..UserName..")"
-local NameUserr = "[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| اسم المستخدم ↺ ["..data.first_name_.."](T.me/"..UserName..")"
+local UserName = (data.username_ or "OUXUO")
+local NameUser = "[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| بواسطه ↺ ["..data.first_name_.."](T.me/"..UserName..")"
+local NameUserr = "[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| اسم المستخدم ↺ ["..data.first_name_.."](T.me/"..UserName..")"
 if status == "lock" then
 send(msg.chat_id_, msg.id_,NameUser.."\n"..text.."\n— — — — — — — — —\n📛| تم تنفيذ الامر بخاصيه ( المسح )\n")
 return false
@@ -3436,19 +3436,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local Blurt = database:get(bot_id.."BluComd:New:rt:bot:"..RTPA..msg.chat_id_)
 if Blurt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "BLUTAEM")..")".."\n📛| تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "OUXUO")..")".."\n📛| تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."BluComd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA) 
 database:sadd(bot_id.."BluSpecial:User"..msg.chat_id_,result.sender_user_id_)  
 elseif Blurt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "BLUTAEM")..")".."\n📛| تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "OUXUO")..")".."\n📛| تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."BluComd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)
 database:sadd(bot_id.."BluMod:User"..msg.chat_id_,result.sender_user_id_)  
 elseif Blurt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "BLUTAEM")..")".."\n📛| تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "OUXUO")..")".."\n📛| تم رفعه "..RTPA.." هنا\n")
 database:set(bot_id.."BluComd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,RTPA)  
 database:sadd(bot_id.."BluManager"..msg.chat_id_,result.sender_user_id_)  
 elseif Blurt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "BLUTAEM")..")".."\n📛| تم رفعه "..RTPA.." هنا\n")
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "OUXUO")..")".."\n📛| تم رفعه "..RTPA.." هنا\n")
 end
 end,nil)   
 end   
@@ -3471,19 +3471,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local Blurt = database:get(bot_id.."BluComd:New:rt:bot:"..RTPA..msg.chat_id_)
 if Blurt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "BLUTAEM")..")".."\n📛| تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "OUXUO")..")".."\n📛| تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."BluSpecial:User"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."BluComd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif Blurt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "BLUTAEM")..")".."\n📛| تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "OUXUO")..")".."\n📛| تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."BluMod:User"..msg.chat_id_,result.sender_user_id_) 
 database:del(bot_id.."BluComd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif Blurt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "BLUTAEM")..")".."\n📛| تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "OUXUO")..")".."\n📛| تم تنزيله من "..RTPA.." هنا\n")  
 database:srem(bot_id.."BluManager"..msg.chat_id_,result.sender_user_id_)  
 database:del(bot_id.."BluComd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif Blurt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "BLUTAEM")..")".."\n📛| تم تنزيله من "..RTPA.." هنا\n")  
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..data.first_name_.."](t.me/"..(data.username_ or "OUXUO")..")".."\n📛| تم تنزيله من "..RTPA.." هنا\n")  
 end
 end,nil)   
 end   
@@ -3506,19 +3506,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local Blurt = database:get(bot_id.."BluComd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if Blurt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "BLUTAEM")..")".."\n📛| تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "OUXUO")..")".."\n📛| تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."BluSpecial:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."BluComd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif Blurt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "BLUTAEM")..")".."\n📛| تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "OUXUO")..")".."\n📛| تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."BluMod:User"..msg.chat_id_,result.id_)  
 database:set(bot_id.."BluComd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif Blurt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "BLUTAEM")..")".."\n📛| تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "OUXUO")..")".."\n📛| تم رفعه "..text1[2].." هنا")   
 database:sadd(bot_id.."BluManager"..msg.chat_id_,result.id_)  
 database:set(bot_id.."BluComd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif Blurt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "BLUTAEM")..")".."\n📛| تم رفعه "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "OUXUO")..")".."\n📛| تم رفعه "..text1[2].." هنا")   
 end
 else
 info = "📛| المعرف غلط"
@@ -3544,19 +3544,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local Blurt = database:get(bot_id.."BluComd:New:rt:bot:"..text1[2]..msg.chat_id_)
 if Blurt == "مميز" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "BLUTAEM")..")".."\n📛| تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "OUXUO")..")".."\n📛| تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."BluSpecial:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."BluComd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif Blurt == "ادمن" and Owner(msg) then 
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "BLUTAEM")..")".."\n📛| تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "OUXUO")..")".."\n📛| تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."BluMod:User"..msg.chat_id_,result.id_)  
 database:del(bot_id.."BluComd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif Blurt == "مدير" and Constructor(msg) then
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "BLUTAEM")..")".."\n📛| تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "OUXUO")..")".."\n📛| تم تنريله من "..text1[2].." هنا")   
 database:srem(bot_id.."BluManager"..msg.chat_id_,result.id_)  
 database:del(bot_id.."BluComd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif Blurt == "عضو" and Addictive(msg) then
-send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/BLUTAEM)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "BLUTAEM")..")".."\n📛| تم تنريله من "..text1[2].." هنا")   
+send(msg.chat_id_, msg.id_,"[- Blu 𝖲𝗈𝗎𝗋𝖼𝖾 .](https://t.me/OUXUO)\n  - - - - - - - - -\n📛| العضو ↺ ["..result.title_.."](t.me/"..(text1[3] or "OUXUO")..")".."\n📛| تم تنريله من "..text1[2].." هنا")   
 end
 else
 info = "📛| المعرف غلط"
@@ -6193,7 +6193,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"📛| حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "BLUTAEM")
+local UserName = (b.username_ or "OUXUO")
 send(msg.chat_id_, msg.id_,"📛| منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 end,nil)   
 end
@@ -6213,7 +6213,7 @@ if b.first_name_ == false then
 send(msg.chat_id_, msg.id_,"📛| حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "BLUTAEM")
+local UserName = (b.username_ or "OUXUO")
 send(msg.chat_id_, msg.id_,"📛| تم ترقية منشئ المجموعه ~ ["..b.first_name_.."](T.me/"..UserName..")")  
 database:sadd(bot_id.."BluBasic:Constructor"..msg.chat_id_,b.id_)
 end,nil)   
@@ -7412,7 +7412,7 @@ name = string.gsub(name,"🧝‍♂","🧝‍♀🧝‍♀🧝‍♀🧝‍♀�
 name = string.gsub(name,"🙍‍♂️","🙎‍♂️🙎‍♂️🙎‍♂️🙎‍♂️🙎‍♂️🙍‍♂️🙎‍♂️🙎‍♂️🙎‍♂️")
 name = string.gsub(name,"🧖‍♂️","🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♂️🧖‍♀️🧖‍♀️🧖‍♀️🧖‍♀️")
 name = string.gsub(name,"👬","👭👭👭👭👭👬👭👭👭")
-name = string.gsub(name,"👨‍👨‍👧","👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👧👨‍👨‍👦👨‍👨‍👦")
+name = string.gsub(name,"👨‍??‍👧","👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👦👨‍👨‍👧👨‍👨‍👦👨‍👨‍👦")
 name = string.gsub(name,"🕒","🕒🕒🕒🕒🕒🕒🕓🕒🕒🕒")
 name = string.gsub(name,"🕤","🕥🕥🕥🕥🕥🕤🕥🕥🕥")
 name = string.gsub(name,"⌛️","⏳⏳⏳⏳⏳⏳⌛️⏳⏳")
@@ -7942,7 +7942,7 @@ if audios.Info == true then
 local Text ='📛| تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '- Blu TeAM .',url="t.me/BLUTAEM"}},
+{{text = '- Blu TeAM .',url="t.me/OUXUO"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -8276,13 +8276,13 @@ if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or tex
 local url,res = https.request('https://evzxar.ml/Blu.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.Blu ~= true then
-send(msg.chat_id_,msg.id_,'📛| لا يمكنك استخدام البوت\n📛| عليك الاشتراك في قناة السورس\n📛| لتتمكن من استخدام الاوامر \n📛| CH ~ [@BLUTAEM]')   
+send(msg.chat_id_,msg.id_,'📛| لا يمكنك استخدام البوت\n📛| عليك الاشتراك في قناة السورس\n📛| لتتمكن من استخدام الاوامر \n📛| CH ~ [@OUXUO]')   
 return false 
 end
 Text = [[
 WeLCoMe TeaM X- Blu ∴
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 𖤂
-ᯓ┇↬[TeaM X- Blu ](https://t.me/BLUTAEM) ∴
+ᯓ┇↬[TeaM X- Blu ](https://t.me/OUXUO) ∴
 ᯓ┇↬[INfO X- Blu ](https://t.me/infoo_Blu) ∴
 ᯓ┇↬[Developer](https://t.me/IZlZ7I) ∴
 ᯓ┇↬[TwS ](https://t.me/U41bot) ∴
@@ -8323,7 +8323,7 @@ Text = [[
 📛| م4 ↺ لعرض اوامر المنشئين
 📛| م5 ↺ لعرض اوامر المطورين
 
-[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/BLUTAEM)
+[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/OUXUO)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8348,7 +8348,7 @@ Text = [[
 📛| رفع منظف - تنزيل منظف
 📛| المنظفين - مسح المنظفين
 — — — —― — — — — ― — — — —
-[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/BLUTAEM)
+[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/OUXUO)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8395,7 +8395,7 @@ Text = [[
 📛| الكلايش
 📛| السيلفي
   - - - - - - - - -
-[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/BLUTAEM)
+[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/OUXUO)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8467,7 +8467,7 @@ Text = [[
 📛| مسح الصلاحيات
 📛| مسح الرابط
   - - - - - - - - -
-[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/BLUTAEM)
+[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/OUXUO)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8514,7 +8514,7 @@ Text = [[
 📛| تفعيل/تعطيل اوامر التحشيش
 📛| تفعيل/تعطيل الرابط/جلب الرابط
   - - - - - - - - -
-[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/BLUTAEM)
+[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/OUXUO)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8550,7 +8550,7 @@ Text = [[
 📛| اضف رسائل + العدد بالرد
 📛| اضف مجوهرات + العدد بالرد
   - - - - - - - - -
-[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/BLUTAEM)
+[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/OUXUO)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -8600,7 +8600,7 @@ Text = [[
 📛| رفع/تنزيل منشئ اساسي
 📛| مسح المنشئين الاساسين
   - - - - - - - - -
-[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/BLUTAEM)
+[𝗧𝗲𝗮𝗠 𝗫- 𝗠𝗮𝘁𝗿𝗶𝘅 .𓃕](t.me/OUXUO)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -9046,7 +9046,7 @@ local A = io.open("sudo.lua", 'w')
 A:write([[
 s = "IZlZ7I"
 
-q = "BLUTAEM"
+q = "OUXUO"
 
 token = "]]..token..[["
 
@@ -9372,7 +9372,7 @@ local idchci = "-100"..idch
 local animation = DAata:match("^animation(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
 local Text ="📛| تم اللغاء منعها بنجاح"
 inline = {
-{{text = '📛| Blu 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/BLUTAEM'}},
+{{text = '📛| Blu 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/OUXUO'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9383,7 +9383,7 @@ local idchci = database:get(bot_id.."BluFilter:msg")
 local photo = DAata:match("^pito(.*)$")
 local Text ="📛| تم اللغاء منعها بنجاح"
 inline = {
-{{text = '📛| Blu 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/BLUTAEM'}},
+{{text = '📛| Blu 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/OUXUO'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9395,7 +9395,7 @@ local idchci = "-100"..idch
 local Sticker = DAata:match("^Sticker(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
 local Text ="📛| تم اللغاء منعه بنجاح"
 inline = {
-{{text = '📛| Blu 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/BLUTAEM'}},
+{{text = '📛| Blu 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/OUXUO'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9405,7 +9405,7 @@ if DAata and DAata:match("^delallSticker(.*)$") and Addictive(data) then
 local delallSticker = DAata:match("^delallSticker(.*)$")
 local Text ="📛| تم اللغاء منع كل المتحركات"
 inline = {
-{{text = '📛| Blu 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/BLUTAEM'}},
+{{text = '📛| Blu 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/OUXUO'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9418,7 +9418,7 @@ if DAata and DAata:match("^delallanimation(.*)$") and Addictive(data) then
 local delallmation = DAata:match("^delallanimation(.*)$")
 local Text ="📛| تم اللغاء منع كل المتحركات"
 inline = {
-{{text = '📛| Blu 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/BLUTAEM'}},
+{{text = '📛| Blu 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/OUXUO'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -9431,7 +9431,7 @@ if DAata and DAata:match("^delallph(.*)$") and Addictive(data) then
 local delallph = DAata:match("^delallph(.*)$")
 local Text ="📛| تم اللغاء منع كل الصور"
 inline = {
-{{text = '📛| Blu 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/BLUTAEM'}},
+{{text = '📛| Blu 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/OUXUO'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
